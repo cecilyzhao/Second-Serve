@@ -4,11 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Saving Food</title>
+
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -57,13 +62,6 @@
       margin-bottom: 40px;
     }
 
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
     .btn {
       padding: 16px 32px;
       border-radius: 16px;
@@ -72,6 +70,8 @@
       font-size: 18px;
       font-weight: bold;
       transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
     }
 
     .btn-primary {
@@ -86,6 +86,7 @@
     .btn-secondary {
       background: white;
       border: 2px solid #ddd;
+      color: #222;
     }
 
     .stats {
@@ -123,6 +124,7 @@
     .section p {
       color: #555;
       font-size: 18px;
+      margin-bottom: 15px;
     }
 
     .solutions {
@@ -186,10 +188,14 @@
     }
   </style>
 </head>
+
 <body>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="container">
+
+      <div class="badge">Saving Food Initiative</div>
 
       <h1>
         Saving Food,<br>
@@ -202,14 +208,17 @@
       </p>
 
       <div class="buttons">
-        <button class="btn btn-primary">Learn More</button>
-        <button class="btn btn-secondary">Join The Mission</button>
+        <a href="#about" class="btn btn-primary">Learn More</a>
+        <a href="#" class="btn btn-secondary">Join The Mission</a>
       </div>
+
     </div>
   </section>
 
+  <!-- STATS -->
   <section class="container">
     <div class="stats">
+
       <div class="card">
         <div class="stat-number">1.3B</div>
         <p>Tons of food wasted globally every year</p>
@@ -224,11 +233,14 @@
         <div class="stat-number">30%</div>
         <p>Of food produced never gets eaten</p>
       </div>
+
     </div>
   </section>
 
+  <!-- WHY IT MATTERS -->
   <section class="section">
     <div class="container">
+
       <h2>Why Food Waste Matters</h2>
 
       <p>
@@ -236,98 +248,90 @@
         Food waste also contributes heavily to greenhouse gas emissions and environmental damage.
       </p>
 
-      <br>
-
       <p>
         Our project aims to educate communities, encourage smarter food consumption,
         and inspire innovative solutions to reduce waste.
       </p>
+
     </div>
   </section>
 
+  <!-- SOLUTIONS -->
   <section class="section">
     <div class="container">
+
       <h2>Our Solutions</h2>
 
       <div class="solutions">
+
         <div class="solution-card">
           <div class="emoji">🥗</div>
           <h3>Smart Meal Planning</h3>
-          <p>
-            Helping families buy only what they need and reduce unnecessary food waste.
-          </p>
+          <p>Helping families buy only what they need and reduce waste.</p>
         </div>
 
         <div class="solution-card">
           <div class="emoji">📦</div>
           <h3>Food Donation Network</h3>
-          <p>
-            Connecting restaurants and grocery stores with local shelters.
-          </p>
+          <p>Connecting surplus food with people in need.</p>
         </div>
 
         <div class="solution-card">
           <div class="emoji">📱</div>
-          <h3>Awareness App</h3>
-          <p>
-            Using reminders and tracking tools to help people reduce food waste.
-          </p>
+          <h3>Awareness Tools</h3>
+          <p>Digital tools to track and reduce food waste habits.</p>
         </div>
+
       </div>
+
     </div>
   </section>
 
+  <!-- ABOUT SECTION (FIXED TARGET) -->
+  <section id="about" class="section">
+    <div class="container">
+
+      <h2>About Our Project</h2>
+
+      <p>
+        Saving Food is a student-led business initiative focused on reducing food waste in households, schools, and local communities.
+      </p>
+
+      <p>
+        Every year, a large amount of edible food is wasted while many people face food insecurity. This creates both environmental and social challenges.
+      </p>
+
+      <p>
+        Our goal is to raise awareness and promote practical actions like better meal planning, smarter shopping habits, and food sharing systems.
+      </p>
+
+      <p>
+        We combine education, community engagement, and simple digital tools to create real impact.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
   <section class="container">
     <div class="cta">
+
       <h2>Together, We Can Make a Difference</h2>
 
       <p>
-        Reducing food waste is not just about saving food — it is about protecting our planet,
-        supporting communities, and building a sustainable future.
+        Reducing food waste protects our planet and supports communities worldwide.
       </p>
 
-      <button class="btn btn-secondary">Support Our Project</button>
+      <a href="#about" class="btn btn-secondary">Support Our Project</a>
+
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p><strong>Saving Food • High School Business Competition</strong></p>
-    <p>Created by Student Innovators for a Better Future 🌎</p>
+    <p>Created by Student Innovators 🌎</p>
   </footer>
-<a href="#about" class="btn btn-primary">Learn More</a>
-  <div class="container">
 
-    <h2>About Our Project</h2>
-
-    <p>
-      Saving Food is a student-led business initiative focused on reducing food waste
-      in households, schools, and local communities.
-    </p>
-
-    <p>
-      Every year, a large amount of edible food is wasted while many people face food insecurity.
-      This creates both environmental and social challenges that we aim to address.
-    </p>
-
-    <h2>Our Goal</h2>
-
-    <p>
-      Our goal is to raise awareness about food waste and promote simple, practical actions
-      such as better meal planning, smarter shopping habits, and food sharing systems.
-    </p>
-
-    <h2>Our Approach</h2>
-
-    <p>
-      We combine education, community engagement, and simple digital tools to help people
-      reduce unnecessary food waste in their daily lives.
-    </p>
-
-  </div>
-</section>
-  <section id="about">
-  <h2>About Us</h2>
-  <p>...</p>
-</section>
 </body>
 </html>
