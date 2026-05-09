@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saving Food</title>
+  <title>Second Serve</title>
 
   <style>
     * {
@@ -35,13 +35,7 @@
     }
 
     .badge {
-      display: inline-block;
-      background: #d1fae5;
-      color: #047857;
-      padding: 10px 18px;
-      border-radius: 999px;
-      font-weight: bold;
-      margin-bottom: 25px;
+      display: none; /* removed first small text */
     }
 
     h1 {
@@ -59,7 +53,21 @@
       color: #555;
       max-width: 800px;
       margin: auto;
+      margin-bottom: 10px;
+    }
+
+    .slogan {
+      font-size: 18px;
+      color: #16a34a;
+      font-weight: bold;
       margin-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
     }
 
     .btn {
@@ -195,16 +203,18 @@
   <section class="hero">
     <div class="container">
 
-      <div class="badge">Saving Food Initiative</div>
-
       <h1>
-        Saving Food,<br>
+        Second Serve<br>
         <span>Saving Our Future</span>
       </h1>
 
       <p class="subtitle">
         A student-led initiative focused on reducing food waste,
         helping communities, and building a more sustainable future.
+      </p>
+
+      <p class="slogan">
+        A second chance for every meal
       </p>
 
       <div class="buttons">
@@ -245,12 +255,14 @@
 
       <p>
         Every day, perfectly edible food is thrown away while millions of people struggle with food insecurity.
+      </p>
+
+      <p>
         Food waste also contributes heavily to greenhouse gas emissions and environmental damage.
       </p>
 
       <p>
-        Our project aims to educate communities, encourage smarter food consumption,
-        and inspire innovative solutions to reduce waste.
+        Second Serve aims to change how people think about food and consumption.
       </p>
 
     </div>
@@ -279,7 +291,7 @@
         <div class="solution-card">
           <div class="emoji">📱</div>
           <h3>Awareness Tools</h3>
-          <p>Digital tools to track and reduce food waste habits.</p>
+          <p>Digital tools to reduce food waste habits.</p>
         </div>
 
       </div>
@@ -287,26 +299,22 @@
     </div>
   </section>
 
-  <!-- ABOUT SECTION (FIXED TARGET) -->
+  <!-- ABOUT -->
   <section id="about" class="section">
     <div class="container">
 
       <h2>About Our Project</h2>
 
       <p>
-        Saving Food is a student-led business initiative focused on reducing food waste in households, schools, and local communities.
+        Second Serve is a student-led initiative focused on reducing food waste in households, schools, and local communities.
       </p>
 
       <p>
-        Every year, a large amount of edible food is wasted while many people face food insecurity. This creates both environmental and social challenges.
+        Every year, a large amount of edible food is wasted while many people face food insecurity.
       </p>
 
       <p>
-        Our goal is to raise awareness and promote practical actions like better meal planning, smarter shopping habits, and food sharing systems.
-      </p>
-
-      <p>
-        We combine education, community engagement, and simple digital tools to create real impact.
+        Our goal is to promote awareness and practical solutions to reduce waste.
       </p>
 
     </div>
@@ -329,7 +337,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p><strong>Saving Food • High School Business Competition</strong></p>
+    <p><strong>Second Serve • High School Business Competition</strong></p>
     <p>Created by Student Innovators 🌎</p>
   </footer>
 
